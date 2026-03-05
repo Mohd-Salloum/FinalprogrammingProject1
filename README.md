@@ -5,7 +5,6 @@ A command-line personal finance application built in Python for tracking income 
 **Course:** Programming for Economists II — IE University  
 **Date:** March 2026
 
----
 
 ## Features
 
@@ -25,7 +24,6 @@ A command-line personal finance application built in Python for tracking income 
 - **Next Month Forecast** — Predicts next month's spending based on the last 3 months' average
 - **Scenario Simulation** — "What if I reduce Food by 10%?" — see the impact before making changes
 
----
 
 ## How to Run
 
@@ -45,7 +43,6 @@ A command-line personal finance application built in Python for tracking income 
 
 No external libraries are needed — the project uses only Python's built-in modules (`json`, `os`).
 
----
 
 ## Project Structure
 
@@ -68,7 +65,6 @@ personal-finance-manager/
 | `storage.py` | Loading data from `finance_data.json`, saving data back to disk |
 | `optimizer.py` | Savings goals, budget limits, overspend detection, cut suggestions, forecasting, scenarios |
 
----
 
 ## Data Format
 
@@ -94,7 +90,6 @@ All financial data is stored in a single `finance_data.json` file with this stru
 }
 ```
 
----
 
 ## Key Python Concepts Used
 
@@ -107,18 +102,15 @@ All financial data is stored in a single `finance_data.json` file with this stru
 - **Tuples** — Used for sorted category rankings
 - **Modular Design** — Code split across 4 files with clear separation of concerns
 
----
 
 ## Team Members
 
 | Member | Contribution |
 |---|---|
-| Member 1 | Storage/file handling, data model |
-| Member 2 | Financial summaries and reporting |
-| Member 3 | Budget optimizer and scenario simulation |
-| Member 4 | UI/menu, input validation, integration |
+| Evan | Storage/file handling, data model |
+| Mohamad | Financial summaries and reporting |
+|Guillhermo | Budget optimizer and scenario simulation |
 
----
 
 ## Next Steps / Future Improvements
 
