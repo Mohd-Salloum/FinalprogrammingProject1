@@ -9,9 +9,7 @@ between sessions so the user does not lose any data.
 import json
 import os
 
-# ──────────────────────────────────────────────
 # Constants
-# ──────────────────────────────────────────────
 DATA_FILE = "finance_data.json"
 
 
@@ -93,10 +91,9 @@ def save_data(data):
 def load_sample_data():
     """
     Generate a realistic set of sample transactions spanning 3 months
-    (January to March 2026) for demonstration purposes. Includes
+    (January to March 2026) for example. Includes
     income, various expense categories, budget limits, a savings goal,
-    and protected categories. This allows the user (or a professor
-    reviewing the project) to instantly explore all features without
+    and protected categories. This allows the user to explore all features without
     manually entering data.
 
     Parameters:
