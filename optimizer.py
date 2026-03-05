@@ -1,7 +1,5 @@
 """
 optimizer.py - Budget Optimizer Module
----------------------------------------
-This is the "beyond course" feature that makes the project stand out.
 It provides:
   1. Budget goal setting (savings goal + per-category limits)
   2. Overspending detection with friendly warnings
@@ -20,9 +18,7 @@ from finance import (
 )
 
 
-# ──────────────────────────────────────────────
 # Budget goal management
-# ──────────────────────────────────────────────
 def set_savings_goal(data):
     """
     Prompt the user to set a monthly savings goal in EUR.
@@ -134,9 +130,9 @@ def manage_protected_categories(data):
     return data
 
 
-# ──────────────────────────────────────────────
-# Overspending detection
-# ──────────────────────────────────────────────
+# Overspending detection #
+
+
 def detect_overspending(data):
     """
     Compare actual spending per category against the user's budget
@@ -199,9 +195,8 @@ def detect_overspending(data):
     return overspend
 
 
-# ──────────────────────────────────────────────
-# Optimization suggestions
-# ──────────────────────────────────────────────
+# Optimization suggestions#
+
 def suggest_cuts(data):
     """
     Analyze the user's spending and suggest specific category cuts
@@ -306,9 +301,7 @@ def suggest_cuts(data):
     print("=" * 55)
 
 
-# ──────────────────────────────────────────────
 # Forecasting
-# ──────────────────────────────────────────────
 def forecast_next_month(data):
     """
     Estimate next month's spending based on the average of the
@@ -393,9 +386,7 @@ def forecast_next_month(data):
     print("=" * 55)
 
 
-# ──────────────────────────────────────────────
 # Scenario simulation
-# ──────────────────────────────────────────────
 def scenario_simulation(data):
     """
     Allow the user to simulate a 'what if' scenario: choosing a
