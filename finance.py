@@ -1,15 +1,13 @@
 """
 finance.py - Core Financial Logic Module
------------------------------------------
+
 Contains all functions for adding transactions (income and expenses),
 generating summary statistics, category breakdowns, and monthly reports.
 This module operates on the shared data dictionary and never accesses
 files directly — that responsibility belongs to storage.py.
 """
 
-# ──────────────────────────────────────────────
 # Constants
-# ──────────────────────────────────────────────
 EXPENSE_CATEGORIES = [
     "Food", "Rent", "Transport", "Utilities", "Entertainment",
     "Health", "Education", "Clothing", "Subscriptions", "Other"
@@ -20,9 +18,7 @@ INCOME_CATEGORIES = [
 ]
 
 
-# ──────────────────────────────────────────────
 # Input helpers
-# ──────────────────────────────────────────────
 def get_valid_amount(prompt):
     """
     Repeatedly ask the user for a numeric amount until a valid
@@ -109,9 +105,7 @@ def choose_from_list(options, prompt):
             print("  Invalid input. Please enter a number.")
 
 
-# ──────────────────────────────────────────────
 # Transaction functions
-# ──────────────────────────────────────────────
 def add_income(data):
     """
     Prompt the user for income details and append a new income
@@ -170,9 +164,8 @@ def add_expense(data):
     return data
 
 
-# ──────────────────────────────────────────────
 # Summary / reporting functions
-# ──────────────────────────────────────────────
+
 def compute_totals(transactions):
     """
     Calculate total income, total expenses, and net savings from a
