@@ -26,9 +26,7 @@ from optimizer import (
     scenario_simulation
 )
 
-# ──────────────────────────────────────────────
 # Constants
-# ──────────────────────────────────────────────
 APP_NAME = "Personal Finance Manager & Budget Optimizer"
 VERSION = "1.0"
 
@@ -195,8 +193,6 @@ def main():
             running = False
 
 
-# ──────────────────────────────────────────────
 # Program entry point
-# ──────────────────────────────────────────────
 if __name__ == "__main__":
     main()
