@@ -1,0 +1,20 @@
+# Data files (generated at runtime)
+finance_data.json
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# IDE files
+.idea/
+.vscode/
+*.swp
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Virtual environments
+venv/
+.env/
